@@ -8,6 +8,9 @@ function checkGuess() {
     const message =
     document.getElementById("message");
     attempts++;
+
+document.getElementById("attemptCount").textContent = attempts;
+
 console.log('Mēģinājums');
     if (isNaN(guess) || guess < 1 || guess > 100 ) {
         alert(
@@ -28,4 +31,3 @@ else {
     message.textContent =
     "Skaitlis ir mazāks!";
 } }
-
